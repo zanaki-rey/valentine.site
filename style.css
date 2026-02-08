@@ -1,0 +1,72 @@
+body {
+  background: linear-gradient(to bottom, #ffb6c1, #ffe4e1);
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  margin-top: 60px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 350px;
+}
+
+.hidden { display: none; }
+
+.pixelBtn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  padding: 10px 15px;
+  margin: 5px;
+  background: hotpink;
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.pixelBtn:hover {
+  background: deeppink;
+}
+
+.pixelLink {
+  font-family: 'Press Start 2P', cursive;
+  color: deeppink;
+  text-decoration: none;
+}
+
+#numberPad {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+#passDisplay {
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin: 10px 0;
+}
+
+.letter {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* floating hearts */
+.heart {
+  position: absolute;
+  color: pink;
+  animation: float 5s linear infinite;
+  font-size: 20px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-500px); }
+}

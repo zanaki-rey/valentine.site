@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Valentine 💘</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PASSWORD PAGE -->
+  <div id="lockScreen" class="card">
+    <h1 style="font-family: 'Press Start 2P', cursive;">🔒 Enter Password</h1>
+    <p style="font-family: 'Press Start 2P', cursive;">Hint: our monthsary 💗</p>
+    <div id="passDisplay">●●●●●●</div>
+    <div id="numberPad"></div>
+    <p id="errorMsg"></p>
+  </div>
+
+  <!-- WRONG PASSWORD PAGE -->
+  <div id="wrongScreen" class="card hidden">
+    <h1 style="font-family: 'Press Start 2P', cursive;">Wrong answer ☹️</h1>
+    <p style="font-family: 'Press Start 2P', cursive;">Are you sure you’re my baby?</p>
+    <button id="retryBtn" class="pixelBtn">Try Again Hun</button>
+  </div>
+
+  <!-- VALENTINE QUESTION PAGE -->
+  <div id="valentineScreen" class="card hidden">
+    <h1 style="font-family: 'Press Start 2P', cursive;">Will you be my Valentine? 💖</h1>
+    <div class="buttons">
+      <button id="yesBtn" class="pixelBtn">Yes 💘</button>
+      <button id="noBtn" class="pixelBtn">No 😭</button>
+    </div>
+  </div>
+
+  <!-- LETTER PAGE -->
+  <div id="letterScreen" class="card hidden">
+    <h1 style="font-family: 'Press Start 2P', cursive;">💌 My Letter For You</h1>
+    <p class="letter" style="font-family: 'Press Start 2P', cursive;">
+Dear Reo, Hindi ko man to sinasabi araw-araw pero you really mean so much to me. I love you because you put effort into loving me, I haven’t experienced a love so calm not until I you. I will always be grateful that you came into my life, you are the best thing that happened to me in 2025. I will never forget the day I talked to you, March 31, 2025 and the day we became together June 21, 2025. I messaged you because a friend dared to do it, but I never knew that a simple dare would lead us here. I will always cherish every moment with you, you make my life easier to live. Sometimes I wonder what I did to deserve you, to deserve your love. Not a single day goes by when I don’t spend time thinking about you. There’s nothing I can write to fully express how you mean so much to me. I never thought someone could feel so much like home or make all my problems disappear until nakilala kita. I can’t wait to be able to hug you, take cute pics with you, eat in a picnic with you and do everything with you. I want to support you and cheer you on 4ever, together or not. Let’s be each other’s safe place and face any problem together because it’s me + you vs the problem, not me vs you. I love you baby and I will love you forevermore.
+    </p>
+    <button id="nextBtn" class="pixelBtn">Next</button>
+  </div>
+
+  <!-- SONG PAGE -->
+  <div id="songScreen" class="card hidden">
+    <h1 style="font-family: 'Press Start 2P', cursive;">🎵 Songs for You</h1>
+    <p><a href="https://open.spotify.com/track/6VwDvhK1gk8sraBtJxw1HG" target="_blank" class="pixelLink">Nothing - Bruno Major</a></p>
+    <p><a href="https://open.spotify.com/track/5X3M3xJ2V1nQcoec8gZyP9" target="_blank" class="pixelLink">Last Night on Earth</a></p>
+  </div>
+
+  <!-- Pixel Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <script src="script.js"></script>
+</body>
+</html>
